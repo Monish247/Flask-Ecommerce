@@ -18,12 +18,12 @@ phases:
 
   pre_build:
     commands:
-      - echo "Pre-build steps.."
+      - echo "Pre-build steps..."
 
   build:
     commands:
       - echo "Build started"
-      - python main.py install
+      - docker build -t "$DOCKER_REGISTRY_USERNAME/python_app:v3" .
       - echo "Build completed"
 
   post_build:
