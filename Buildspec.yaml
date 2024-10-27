@@ -38,5 +38,5 @@ phases:
 
 artifacts:
   files:
-    - **/*.py
+    - '**/*.py'
   discard-paths: yes
